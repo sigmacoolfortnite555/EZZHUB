@@ -1,0 +1,109 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(181, 21, 24)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.321912915, 0, 0.246898264, 0)
+Frame.Size = UDim2.new(0, 367, 0, 357)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(120, 0, 2)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 367, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "EZZ HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0490463227, 0, 0.207282916, 0)
+TextButton.Size = UDim2.new(0, 130, 0, 33)
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = "ESP"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacoolfortnite555/esp/main/arsenal%20esp"))()
+end)
+
+UICorner.Parent = TextButton
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.539509535, 0, 0.207282916, 0)
+TextButton_2.Size = UDim2.new(0, 135, 0, 33)
+TextButton_2.Font = Enum.Font.FredokaOne
+TextButton_2.Text = "AIMBOT"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacoolfortnite555/AIMBOTARSENAL/main/aimbot"))()
+end)
+
+UICorner_2.Parent = TextButton_2
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.28337875, 0, 0.347338945, 0)
+TextButton_3.Size = UDim2.new(0, 135, 0, 33)
+TextButton_3.Font = Enum.Font.FredokaOne
+TextButton_3.Text = "NOCLIP "
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmacoolfortnite555/noclipscript/main/NOCLIP"))()
+end)
+
+UICorner_3.Parent = TextButton_3
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(181, 21, 24)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.190735698, 0, 0.49859944, 0)
+TextLabel_2.Size = UDim2.new(0, 226, 0, 166)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Sorry! These are the only features for now, soon i will add kill all, speed hack and more!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
